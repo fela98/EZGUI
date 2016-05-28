@@ -1,4 +1,3 @@
-/// <reference path="../lib/pixi.d.ts" />
 declare module EZGUI {
     var Easing: {
         Linear: {
@@ -139,7 +138,7 @@ declare module EZGUI.Compatibility {
     class TilingSprite {
         constructor(texture: PIXI.Texture, width: number, height: number);
     }
-    class GUIContainer extends PIXI.DisplayObjectContainer {
+    class GUIContainer extends PIXI.Container {
     }
     class GUIDisplayObjectContainer extends GUIContainer {
         phaserGroup: any;
@@ -219,7 +218,7 @@ declare module EZGUI {
         guiID: string;
         Id: string;
         userData: any;
-        container: PIXI.DisplayObjectContainer;
+        container: PIXI.Container;
         guiParent: GUISprite;
         constructor();
         protected setupEvents(): void;
@@ -247,7 +246,7 @@ declare module EZGUI {
         themeId: any;
         guiID: string;
         userData: any;
-        draggable: PIXI.DisplayObjectContainer;
+        draggable: PIXI.Container;
         draghandle: any;
         dragConstraint: string;
         dragXInterval: number[];
