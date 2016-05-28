@@ -1,23 +1,27 @@
 ﻿EZGUI 
 =====
-EZGUI is a gui system for PIXI and Phaser.
-it's focused on PIXI 3 but support PIXI 2 to garantee seamless transition, and to remain compatible with Phaser 2.x
+EZGUI is a GUI system for PIXI and Phaser.
+It's focused on PIXI 3 but supports PIXI 2 to guarantee seamless transition, and to remain compatible with Phaser 2.x
 
 ![Game GUI sample](http://ezgui.ezelia.com/img/ezgui-game-optimized2.gif) ![App GUI sample](http://ezgui.ezelia.com/img/ezgui-app-optimized2.gif) 
 
 
 Note for Phaser 2.4.x users
 ===========================
-if you use Phaser 2.4.x, please include phaser-compat-2.4.js file *after* phaser.js script (see examples/Phaser/phaser-2.4.html) 
-if you load custom resources to be used in your GUI templates and you are loading them with phaser default loader, 
-you'll need to add an event listener for onLoadComplete and pass EZGUI.Compatibility.fixCache (see examples/game/phaser-2.4.html line ~193)
+If you use Phaser 2.4.x, please include phaser-compat-2.4.js file *after* phaser.js script (see examples/Phaser/phaser-2.4.html)
+
+If you load custom resources to be used in your GUI templates and you are loading them with phaser default loader, you'll need to add an event listener for onLoadComplete and pass EZGUI.Compatibility.fixCache (see [examples/game/phaser-2.4.html line ~193](examples/game/phaser-2.4.html#L193))
+
+Phaser 2.4.4 known issues
+===========================
+WebGL renderer seem to have a strange behaviour, investigation is made to identify/isolate the bug since it don't seems to be an EZGUI issue.
 
 
 
 
 Important 
 =========
-The code in this repository is still in developement, and some breaking changes may occure
+The code in this repository is still in development, and some breaking changes may occur.
 
 
 Online components demos
@@ -32,7 +36,9 @@ Online components demos
  * [checkbox](http://ezgui.ezelia.com/examples/03-checkbox/1-list.html)
  * [radio](http://ezgui.ezelia.com/examples/04-radio/1-list.html)
  * [slider](http://ezgui.ezelia.com/examples/05-slider/1-horizontal.html)
+ * [Tabs](http://ezgui.ezelia.com/examples/09-tabs/1.html)
  * [Fonts](http://ezgui.ezelia.com/examples/06-fonts/01.html)
+
  * [Phaser complex](http://ezgui.ezelia.com/examples/Phaser/)
  * [Pixi complex](http://ezgui.ezelia.com/examples/Pixi/)
 
@@ -57,16 +63,17 @@ A work in progress [documentation](https://github.com/Ezelia/EZGUI/wiki) is avai
 There are also a lot of [commented examples](https://github.com/Ezelia/EZGUI/tree/master/examples) to get started
 
 
-Features.
-=========
- * Flexible configuration : EZGUI use a flexible JSON configuration format for theme an gui definitions
+Features
+========
+ * Flexible configuration : EZGUI use a flexible JSON configuration format for theme and gui definitions
  * Themes : a default theme is provided but you can create your own custom theme.
  * Tweening 
  * Bitmap fonts
  * Extendable : you can easily create your own components
+ * relative width/height and positionning using percentage values 
  
 
-implemented components
+Implemented Components
 ======================
  * Window 
  * Layout 
@@ -77,28 +84,21 @@ implemented components
  * Slider
  * List 
  * Input
-
+ * Tabs
 
 
 TODO 
 ====
  * Enhance Phaser 2.4 compatibility
  * Two states button component
- * Tabs component
  * Scrollbar component
  * texts/texts alignements 
- * relative width/height 
  * Documentation for theme definition
  * Documentation for gui definition
  * GUI Designer :)
 
 
 
-Known issues 
-============
-Input control : viewport do not follow the caret.
-
- 
 
 
 License

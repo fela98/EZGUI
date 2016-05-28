@@ -10,12 +10,13 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
-    <TypeScriptToolsVersion>1.4</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>1.6</TypeScriptToolsVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <ItemGroup>
     <Content Include="assets\fonts\desyrel.png" />
@@ -83,6 +84,7 @@
     <Content Include="assets\metalworks-theme\images\corner.png" />
     <Content Include="assets\metalworks-theme\images\line.png" />
     <Content Include="dist\EZGUI.js" />
+    <Content Include="examples\08-list\add-children-programmatically.html" />
     <Content Include="examples\01-window\6-layout-relative-positions.html" />
     <Content Include="examples\01-window\5-children-programmatically.html" />
     <Content Include="examples\01-window\4-layout.html" />
@@ -95,12 +97,14 @@
     <Content Include="examples\05-slider\1-horizontal.html" />
     <Content Include="examples\04-radio\1-list.html" />
     <Content Include="examples\03-checkbox\1-list.html" />
+    <Content Include="examples\09-tabs\1.html" />
     <Content Include="examples\app\phaser.html" />
     <Content Include="examples\06-fonts\01.html" />
     <Content Include="examples\app\app-gui.js" />
     <Content Include="examples\checkers\index.html" />
     <Content Include="examples\game\game-gui.js" />
     <Content Include="examples\app\pixi.html" />
+    <Content Include="examples\game\phaser-2.4.html" />
     <Content Include="examples\game\phaser.html" />
     <Content Include="examples\game\pixi.html" />
     <Content Include="examples\kits\MainScreen-Phaser.html" />
@@ -113,10 +117,12 @@
     <Content Include="examples\test\index.html" />
     <Content Include="js\pixi2.dev.js" />
     <Content Include="js\pixi3.dev.js" />
+    <None Include="changelog.md" />
     <TypeScriptCompile Include="lib\TweenJS.d.ts" />
     <TypeScriptCompile Include="src\components\Input.ts" />
     <TypeScriptCompile Include="src\components\Label.ts" />
     <TypeScriptCompile Include="src\components\Slider.ts" />
+    <TypeScriptCompile Include="src\components\Tabs.ts" />
     <TypeScriptCompile Include="src\utils\Device.ts" />
     <TypeScriptCompile Include="src\utils\EventHandler.ts" />
     <TypeScriptCompile Include="src\GUIObject.ts" />

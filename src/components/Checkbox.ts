@@ -52,8 +52,8 @@ module EZGUI.Component {
 
 
 
-        constructor(public _settings, public themeId) {
-            super(_settings, themeId);
+        constructor(public settings, public themeId) {
+            super(settings, themeId);
 
 
 
@@ -96,7 +96,7 @@ module EZGUI.Component {
 
         protected draw() {
             super.draw();
-
+            
 
             this._checkmark = this.createThemeImage(this._settings, 'default', 'checkmark');
 
